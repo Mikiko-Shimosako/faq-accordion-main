@@ -7,17 +7,18 @@ button {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
 
-  background-image: url('./assets/images/background-pattern-desktop.svg');
+  background-image: url('./assets/images/background-pattern-mobile.svg');
+  background-size: contain;
   background-repeat: no-repeat;
   background-color: hsl(275, 100%, 97%);
   color: hsl(292, 42%, 14%);
 }
 
 .container {
-  width: 60%;
-  margin: 12rem auto;
+  width: 90%;
+  margin: 8rem auto;
   background-color: hsl(0, 100%, 100%);
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 .inner {
@@ -36,7 +37,7 @@ button {
 }
 
 .title {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -44,8 +45,8 @@ button {
 
 .title::before {
   content: url('./assets/images/icon-star.svg');
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   margin-right: 1rem;
 }
 
@@ -64,4 +65,16 @@ button {
 
 .faq-answer {
   color: hsl(292, 16%, 49%);
+}
+
+@media (min-width: 1440px) {
+  .body {
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+    background-size: contain;
+  }
+
+  .container {
+    width: 60%;
+    margin: 12rem auto;
+  }
 }
